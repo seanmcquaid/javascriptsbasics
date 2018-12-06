@@ -78,3 +78,55 @@ if (1 == 1) {
 } else {
     console.log("error")
 }
+
+// while loops
+
+var counter = 0;
+
+while(counter < 10) {
+    console.log(counter)
+    counter = counter + 1;
+}
+
+console.log("we're done with our while loop")
+
+var string = "";
+
+while(string != "aaaaa") {
+    console.log(string)
+    string = string + "a";
+}
+
+var arr = [];
+while (arr.length < 5) {
+    arr.push("Sean");
+    console.log(arr)
+}
+
+// For loops
+
+for (var i = 0; i < 10; i++){
+    console.log("I am in a for loop")
+}
+
+// Functions 
+
+function adamsFunc() {
+    console.log("I'm in a function dawg")
+}
+
+// anonomyous functions
+var anonFunc = function () {
+    console.log("anon")
+}
+
+var adamsArray = ["a","b","c","d"];
+var reversed = [];
+
+while (adamsArray.length > 0) {
+    var popped = adamsArray.pop();
+    reversed.push(popped);
+    // reversed.push(adamsArray.pop());
+}
+
+console.log(reversed);
